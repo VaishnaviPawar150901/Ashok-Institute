@@ -1,0 +1,205 @@
+/* Reset some basic defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+  color: #333;
+  padding-bottom: 50px;
+}
+
+/* Header */
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  border-bottom: 4px solid #0052cc;
+}
+
+header img {
+  float: center;
+  margin-left: 600px;
+  width: 80px;
+}
+
+header h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #0052cc;
+  overflow-x: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #003366;
+}
+
+/* Section Styles */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #0052cc;
+}
+
+section h3,
+section h {
+  margin-top: 30px;
+  font-size: 1.3rem;
+  color: #004080;
+}
+
+/* Paragraph & Text */
+section p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn,
+button {
+  display: inline-block;
+  background-color: #0052cc;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+  background-color: #003366;
+}
+
+/* Images & Captions */
+img {
+  display: block;
+  margin: 15px auto;
+  border-radius: 6px;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Lists */
+ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Forms */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #f1f5ff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  header img {
+    float: none;
+    display: block;
+    margin: auto;
+  }
+
+  header h1,
+  header p {
+    text-align: center;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+}
